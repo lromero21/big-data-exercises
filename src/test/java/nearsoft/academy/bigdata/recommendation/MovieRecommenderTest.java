@@ -15,10 +15,10 @@ public class MovieRecommenderTest {
     public void testDataInfo() throws IOException, TasteException {
         //download movies.txt.gz from 
         //    http://snap.stanford.edu/data/web-Movies.html
-        MovieRecommender recommender = new MovieRecommender("/Desktop/LuisMario/AmazonProblem/movies.txt.gz");
-        assertEquals(7911684, recommender.getTotalReviews()); //
-        assertEquals(253059, recommender.getTotalProducts()); // product/productId:
-        assertEquals(889176, recommender.getTotalUsers());
+        MovieRecommender recommender = new MovieRecommender();
+        assertEquals(7911684, recommender.getTotalReviews("Users/Desktop/LuisMario/AmazonProblem/movies.txt.gz")); //
+        assertEquals(253059, recommender.getTotalProducts("Users/Desktop/LuisMario/AmazonProblem/movies.txt.gz")); // product/productId:
+        assertEquals(889176, recommender.getTotalUsers("Users/Desktop/LuisMario/AmazonProblem/movies.txt.gz"));
 
         // get a token with a review and saved it if it's not already defined, but if it's already defined plus one
         //
