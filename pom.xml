@@ -13,7 +13,6 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
-
   <dependencies>
       <dependency>
           <groupId>org.apache.mahout</groupId>
@@ -26,6 +25,5 @@
           <version>4.7</version>
           <scope>test</scope>
       </dependency>
-
   </dependencies>
 </project>
